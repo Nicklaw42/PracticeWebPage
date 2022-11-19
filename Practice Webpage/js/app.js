@@ -3,23 +3,25 @@ $("#btnHide").click(function(){
 });
 
 $("#btnSpanish").click(function(){
-    $("#crdHello").text("El Sitio Linux de Nick!")
-    $("#btnHide").text("Hace un buton nuevo!")
-    $("#btnEnglish").css({"visibility": "visible"})
-    $("#btnSpanish").css({"visibility": "Hidden"})
+    $("#crdHello").text("El Sitio Linux de Nick!");
+    $("#btnHide").text("Hace un buton nuevo!");
+    $('.dogcard').text("Perros");
+    $("#btnEnglish").css({"visibility": "visible"});
+    $("#btnSpanish").css({"visibility": "Hidden"});
 
     //look into ordinality with CSS, maybe stick to CSS docks rather than html
 });
 $("#btnEnglish").click(function(){
-    $("#crdHello").text("Nick's Linux Site!")
-    $("#btnHide").text("Make a New Button!")
-    $("#btnSpanish").css({"visibility": "visible"})
-    $("#btnEnglish").css({"visibility": "Hidden"})
+    $("#crdHello").text("Nick's Linux Site!");
+    $("#btnHide").text("Make a New Button!");
+    $('.dogcard').text("Dogs");
+    $("#btnSpanish").css({"visibility": "visible"});
+    $("#btnEnglish").css({"visibility": "Hidden"});
 });
 
 
 var spanish = false;
 
 $("#btnSpanish").click(function(){
-    $("#crdHello").on("")
+    $("#crdHello").on("");
 })
