@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="English">
-    <header class="header" id="myHeader">
+   
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +9,40 @@
         <link rel="stylesheet" href="css/bootstrapSlate.min.css"> 
         <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
-        <link ref="stylesheet" href="css/style.css">
-        <h2>The Sticky Frog</h2>
+        <link rel="stylesheet" href="css/style.css">
+    <header class="header">
+        <div class="sticky">
+            <h2>The Sticky Frog</h2>
+        </div>
     </header>
     <body class="dark-mode">
-        <div id="mainFrame" class="card mt-3 display:flex" >
+        <div id="test" class="card mt-3 p-4" >
             <h3  id="crdHello"class="card display:flex align-items-center" >Welcome to my website!</h3>
-            <div class="display:flex p-1">
+            <div class="display:flex p-1 mb-1">
             <button id="btnHide" class="button btn-danger" ">Make a New Button!</button>
             <button id="btnSpanish" class="button align-self-end btn-danger"  style="width:24%">En Español!</button>
             <button id="btnEnglish" class="button align-self-end btn-danger"  style="width:25%;visibility: hidden;">In English!</button>
             </div>
-            <div class="row p-4">
-                <div class="col-md-3 card">Hello, my name is Nicholas Law! I'm a student at Tennessee Technological University for a degree in Business Information Technology. Feel free to explore this website where I pracice various web design things.</div>
-                <div class="col-md-9 card"><img src="css/images/Ozen.gif" style="width:50%;height:80%"></div>
+            <div class="contentCards">
+                <div class="col-md-3 card">
+                    <p>Hello, my name is Nicholas Law! I'm a student at Tennessee Technological University for a degree in Business Information Technology. 
+                    Feel free to explore this website where I pracice various web design things. 
+                    </p>
+                </div>
+                <div class="col-md-8 card display:flex justify-content-space-around">
+                    <div class="card bg-info flex-grow-1 p-1 mt-2">fefe</div>
+                    <div class="card bg-warning flex-grow-1 p-1">fefe</div>
+                    <div class="card bg-danger flex-grow-1 p-1">fefe</div>
+                    <div class="card bg-success flex-grow-1 p-1">fefe</div>
+                </div>
             </div>
-            <div class="row p-4">
-                <div class="col-md-6 card">The datatable is now here. Needs some styling fixes and it should be fine until it gets real data.</div>
-                <div class="col-md-6 card">
-                    <table id="exampleTable" class="display" style="width:100%; color: black; ">
+            <div class="contentCards">
+                <div class="col-md-3 card">
+                <p>The datatable is now here. Needs some styling fixes and it should be fine until it gets real data   
+                </p>
+                </div>
+                <div class="col-md-8 card">
+                    <table id="exampleTable" class="display" style="width:100%; color: black;">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -85,16 +100,18 @@
                     </table>
                 </div>
             </div>
-            <div class="row p-4">
-                <div class="col-md-6 card">Chart.js has been added! Here's the link to the tutorial. https://www.chartjs.org/docs/latest/getting-started/</div>
-                <div class="col-md-6 card">
+            <div class="contentCards">
+                <div class="col-md-3 card">
+                    <p>Chart.js has been added! Here's the link to the tutorial. https://www.chartjs.org/docs/latest/getting-started/
+                    </p>
+                </div>
+                <div class="col-md-8 card">
                     <div>
                         <canvas id="myChart"></canvas>
                       </div>
                       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                       <script>
                         const ctx = document.getElementById('myChart');
-        
                         new Chart(ctx, {
                             type: 'bar',
                             data: {
