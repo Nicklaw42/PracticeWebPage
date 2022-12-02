@@ -11,29 +11,34 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
         <link rel="stylesheet" href="css/style.css">
     <header class="header">
+        <script src="https://kit.fontawesome.com/12aa9df8e0.js" crossorigin="anonymous"></script>
         <div class="sticky">
             <h2>The Sticky Frog</h2>
         </div>
     </header>
     <body class="dark-mode">
-        <div id="test" class="card mt-3 p-4" >
-            <h3  id="crdHello"class="card display:flex align-items-center" >Welcome to my website!</h3>
-            <div class="display:flex p-1 mb-1">
-            <button id="btnHide" class="button btn-danger" ">Make a New Button!</button>
-            <button id="btnSpanish" class="button align-self-end btn-danger"  style="width:24%">En Español!</button>
-            <button id="btnEnglish" class="button align-self-end btn-danger"  style="width:25%;visibility: hidden;">In English!</button>
-            </div>
+        <div class="card mt-3 p-4">
+            <h3  id="crdHello"class="card display:flex align-items-center align-self-center" style="width: 96%;" >Welcome to my website!</h3>
             <div class="contentCards">
                 <div class="col-md-3 card">
                     <p>Hello, my name is Nicholas Law! I'm a student at Tennessee Technological University for a degree in Business Information Technology. 
                     Feel free to explore this website where I pracice various web design things. 
                     </p>
                 </div>
-                <div class="col-md-8 card display:flex justify-content-space-around">
-                    <div class="card bg-info flex-grow-1 p-1 mt-2">fefe</div>
-                    <div class="card bg-warning flex-grow-1 p-1">fefe</div>
-                    <div class="card bg-danger flex-grow-1 p-1">fefe</div>
-                    <div class="card bg-success flex-grow-1 p-1">fefe</div>
+                <div class="col-md-8 card" id="textcards">
+                    <section class="cards">
+                        <div class="card crdColor mt-1 bg-purple">
+                            <image src="css/images/Tennessee_Technological_University_seal.svg.png"></image>
+                        </div>
+                        <div class="card crdColor mt-1 bg-danger crdComputer">
+                            <i class="fa-solid fa-computer"></i>
+                        </div>
+                        <div class="card crdColor mt-1 jobs bg-info crdComputer">
+                            <button id="btnSpanish" class="button btn-danger">En Español!</button>
+                            <button id="btnEnglish" class="button btn-danger">In English!</button>                
+                        </div>
+                        <div class="card crdColor mt-1 jobs bg-warning">fefe</div>
+                    </section>
                 </div>
             </div>
             <div class="contentCards">
@@ -42,6 +47,7 @@
                 </p>
                 </div>
                 <div class="col-md-8 card">
+                    <div class="card bg-dark p-1 mt-2">
                     <table id="exampleTable" class="display" style="width:100%; color: black;">
                         <thead>
                             <tr>
@@ -98,6 +104,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </div>
             </div>
             <div class="contentCards">
@@ -106,7 +113,7 @@
                     </p>
                 </div>
                 <div class="col-md-8 card">
-                    <div class="card p-1 mt-2">
+                    <div class="card p-1 bg-dark mt-2">
                         <canvas id="myChart"></canvas>
                       </div>
                       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

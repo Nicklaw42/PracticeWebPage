@@ -1,8 +1,3 @@
- 
-#test{
-  overflow: scroll;
-}
-
 .contentCards{
   display: flex;
   flex-direction: row;
@@ -13,13 +8,38 @@
   border: 3px solid black;
 }
 
-
-  .exampleTable{
-    background-color: rgb(228, 93, 93);
-  }
-
-.testcontent{
-  background-color: blue;
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
- 
+.crdColor{
+  flex: 0 1 24%;
+}
+
+.crdComputer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+  .fa-computer{
+    font-size: 13em;
+  }
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+      .fa-computer {
+          font-size: 1.5em;
+      }
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 1025px) {
+        .fa-computer {
+            font-size: 5em;
+        }
+    }
+
+    @media screen and (min-width: 1026px) {
+        .fa-computer {
+            font-size: 12em;
+        }
+    }
