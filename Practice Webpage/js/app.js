@@ -7,13 +7,28 @@ $(document).ready(function(){
 $("#btnHide").click(function(){
     $("<h1 class='btn-warning align-self-center'>Hi!</h1>").clone().appendTo("#mainFrame");
 });
-Swal.fire({
-    title: 'Have a suggestion?',
-    text: "Enter your message here and I'll get it in my email.",
-    input: 'textarea',
-    icon: 'error',
-    confirmButtonText: 'Cool'
-  })
+
+$('.btnSuggestions').click(function(){
+    Swal.fire({
+        title: 'Have a suggestion?',
+        text: "Enter your message here and I'll get it in my email.",
+        input: 'textarea',
+        icon: 'question',
+        confirmButtonText: 'Submit',
+        showDenyButton: true,
+        denyButtonText: 'Cancel'
+      })
+});
+
+$('.btnTrigger').click(function(){
+    Swal.fire({
+        title: 'Sweet Alert Works!',
+        text: "This confirms that sweet alerts is working.",
+        icon: 'success',
+        confirmButtonText: 'Yay!',
+      })
+})
+
 $("#btnSpanish").click(function(){
     $("#crdHello").text("El Sitio Linux de Nick!");
     $("#btnHide").text("Hace un buton nuevo!");
@@ -38,16 +53,22 @@ $("#btnSpanish").click(function(){
     $("#crdHello").on("");
 });
 
-let chartJS = document.querySelector('.chartJS')
+let chartJS = document.querySelector('.chartJS');
 console.log("this works!")
 $('#btnScrollToJS').click(function(){
     console.log("this works!")
     chartJS.scrollIntoView(true);
 });
 
-let datatable = document.querySelector('.fire')
+let datatable = document.querySelector('.fire');
 console.log("this works!")
 $('#btnScrollToDatatable').click(function(){
     console.log("this works!")
     datatable.scrollIntoView(true);
+});
+
+let sweetAlert = document.querySelector('.divSweetAlert');
+$('#btnScrollToSA').click(function(){
+    console.log("this works!")
+    sweetAlert.scrollIntoView(true);
 });

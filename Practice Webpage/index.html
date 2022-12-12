@@ -30,10 +30,11 @@
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                   <li><button class="btn" id="btnScrollToDatatable">Datatable</button></li>
                   <li><button class="btn" id="btnScrollToJS">Chart.js</button></li>
+                  <li><button class="btn" id="btnScrollToSA">SweetAlerts</button></li>
                 </ul>
               </li>
-              <li class="nav-item">
-              <button class="btn nav-link">Suggestions</button>
+              <li class="nav-link button btnSuggestions">
+              Suggestion?
               </li>
             </ul>
           </div>
@@ -137,10 +138,11 @@
         </div>
         <div class="contentCards">
             <div class="col-md-3 card">
-                Sweet Alerts will go here
+                Sweet Alerts will go here. Want to set up suggestions tab to send messages to an email.
             </div>
-            <div class="col-md-8 card" id="textcards">
-                <button class="btn">trigger</button>
+            <div class="col-md-8 card d-flex align-items-center justify-content-center divSweetAlert" id="textcards">
+                <i class="fa-regular fa-circle-check"></i>
+                <button class="btn btnTrigger">Fire SweetAlert</button>
             </div>
         </div>
     </div>
@@ -161,5 +163,4 @@
     <script type="text/javascript" charset="utf8"
         src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/jquery.dataTables.min.js"></script>
 </body>
-
 </html>
