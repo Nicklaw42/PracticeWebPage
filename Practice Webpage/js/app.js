@@ -3,9 +3,7 @@
 $(document).ready(function(){
   $('#exampleTable').DataTable();
 });
-$('#exampleTable').Datatable({
-    responsive: false
-});
+
 $("#btnHide").click(function(){
     $("<h1 class='btn-warning align-self-center'>Hi!</h1>").clone().appendTo("#mainFrame");
 });
@@ -34,3 +32,16 @@ $("#btnSpanish").click(function(){
     $("#crdHello").on("");
 });
 
+let chartJS = document.querySelector('.chartJS')
+console.log("this works!")
+$('#btnScrollToJS').click(function(){
+    console.log("this works!")
+    chartJS.scrollIntoView(true);
+});
+
+let datatable = document.querySelector('.fire')
+console.log("this works!")
+$('#btnScrollToDatatable').click(function(){
+    console.log("this works!")
+    datatable.scrollIntoView(true);
+});
