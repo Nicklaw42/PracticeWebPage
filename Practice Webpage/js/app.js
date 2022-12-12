@@ -7,7 +7,13 @@ $(document).ready(function(){
 $("#btnHide").click(function(){
     $("<h1 class='btn-warning align-self-center'>Hi!</h1>").clone().appendTo("#mainFrame");
 });
-
+Swal.fire({
+    title: 'Have a suggestion?',
+    text: "Enter your message here and I'll get it in my email.",
+    input: 'textarea',
+    icon: 'error',
+    confirmButtonText: 'Cool'
+  })
 $("#btnSpanish").click(function(){
     $("#crdHello").text("El Sitio Linux de Nick!");
     $("#btnHide").text("Hace un buton nuevo!");
