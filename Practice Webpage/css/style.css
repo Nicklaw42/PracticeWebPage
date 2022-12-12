@@ -13,7 +13,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50%;
+}
+#myChart{
+  min-height: 250px;
+}
 .crdColor{
   flex: 0 1 24%;
 }

@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('#exampleTable').DataTable();
 });
 $('#exampleTable').Datatable({
-    responsive: true
+    responsive: false
 });
 $("#btnHide").click(function(){
     $("<h1 class='btn-warning align-self-center'>Hi!</h1>").clone().appendTo("#mainFrame");
