@@ -3,9 +3,8 @@
   flex-direction: row;
   justify-content: space-around;
 }
-
-.col-md-3, .col-md-8{
-  border: 3px solid black;
+.dark-mode{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .header{
   position: sticky;
@@ -29,39 +28,9 @@
 #myChart{
   min-height: 250px;
 }
-.crdColor{
-  flex: 0 1 24%;
-}
 
-.crdComputer{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-  .fa-computer{
-    font-size: 13em;
+  .fa-square ,.fa-circle-check{
+    font-size: 12em;
   }
 
   
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-      .fa-computer {
-          font-size: 1.5em;
-      }
-      .contentCards{
-        flex-direction: column;
-      }
-    }
-
-    @media screen and (min-width: 426px) and (max-width: 1025px) {
-        .fa-computer {
-            font-size: 5em;
-        }
-    }
-
-    @media screen and (min-width: 1026px) {
-        .fa-computer {
-            font-size: 12em;
-        }
-    }
-
-    

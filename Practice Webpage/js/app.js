@@ -72,3 +72,12 @@ $('#btnScrollToSA').click(function(){
     console.log("this works!")
     sweetAlert.scrollIntoView(true);
 });
+
+anime({
+    targets: '.target',
+    translateX: 100,
+    loop: true,
+    direction: 'alternate',
+    easing: 'easeInOutSine'
+  });
+
