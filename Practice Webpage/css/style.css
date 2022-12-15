@@ -64,4 +64,7 @@
   .apiCards{
     flex-direction: column;
   }
+  .contentCards{
+    flex-direction: column;
+  }
 }
