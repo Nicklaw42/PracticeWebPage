@@ -54,23 +54,24 @@ $("#btnSpanish").click(function(){
 });
 
 let chartJS = document.querySelector('.chartJS');
-console.log("this works!")
+let datatable = document.querySelector('.divDataTable');
+let sweetAlert = document.querySelector('.divSweetAlert');
+let animeJS = document.querySelector('.divAnimeJS');
 $('#btnScrollToJS').click(function(){
     console.log("this works!")
     chartJS.scrollIntoView(true);
 });
-
-let datatable = document.querySelector('.fire');
-console.log("this works!")
 $('#btnScrollToDatatable').click(function(){
     console.log("this works!")
     datatable.scrollIntoView(true);
 });
-
-let sweetAlert = document.querySelector('.divSweetAlert');
 $('#btnScrollToSA').click(function(){
     console.log("this works!")
     sweetAlert.scrollIntoView(true);
+});
+$('#btnScrollToAnime').click(function(){
+    console.log("this works!")
+    animeJS.scrollIntoView(true);
 });
 
 anime({
