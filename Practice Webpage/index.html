@@ -61,7 +61,99 @@
                 <image style="width: 10%;" src="css/images/Tennessee_Technological_University_seal.svg.png"></image>
                 <h4>I'm a student at Tennesee Technological University </h4>
             </div>
-    </div>        
+            
+        </div>  
+        <div class="contentCards">
+          <div class="col-md-3 card border d-flex justify-content-center align-items-center">
+              <div ><image src="css/images/logo.png" class="img-fluid" alt="repsonsive image"></image></div>
+              <div class="fire"><h4 style="text-align: center;">DataTables</h4></div>
+          </div>
+          <div class="col-md-8 card border">
+              <div class=" p-1 mt-2">
+                  <table id="exampleTable" class="display" style="width:100%; color: black;">
+                      <thead>
+                          <tr>
+                              <th>Name</th>
+                              <th>Origin</th>
+                              <th>Occupation</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Oscar</td>
+                              <td>Astora</td>
+                              <td>Knight</td>
+                          </tr>
+                          <tr>
+                              <td>Artorius</td>
+                              <td>Anorlando</td>
+                              <td>Knight</td>
+                          </tr>
+                          <tr>
+                              <td>Karla</td>
+                              <td>Irithyll</td>
+                              <td>Witch</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div> 
+      <div class="contentCards">
+          <div class="col-md-3 card border d-flex justify-content-center align-items-center">
+              <image src="css/images/Chart-JS/chart-js-logos-idg4l58CuH.svg" class="img-fluid" alt="repsonsive image"></image>
+              <div><h4 style="text-align: center;">Chart.js</h4></div>
+          </div>
+          <div class="col-md-8 card border">
+              <div class=" flexbox chartJS mt-2">
+                  <canvas id="myChart"></canvas>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+                  const ctx = document.getElementById('myChart');
+                  new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange',],
+                          datasets: [{
+                              label: '# of Votes',
+                              data: [12, 19, 3, 5, 2, 3],
+                              borderWidth: 1,
+                              
+                          }]
+                      },
+                      options: {
+                          maintainAspectRatio: false,
+                          scales: {
+                              y: {
+                                  beginAtZero: true
+                              }
+                          }
+                      }
+                  });
+              </script>
+          </div>
+      </div>
+      <div class="contentCards">
+          <div class="col-md-3 card border justify-content-center align-items-center">
+              <div ><image src="css/images/SweetAlert2.png" class="img-fluid" alt="repsonsive image"></image>
+              </div>   
+           </div>
+          <div class="col-md-8 p-1 card border d-flex align-items-center justify-content-center divSweetAlert" id="textcards">
+              <i class="fa-regular fa-circle-check mt-2"></i>
+              <button class="card btn btnTrigger">Fire SweetAlert</button>
+          </div>
+      </div>
+      <div class="contentCards">
+          <div class="col-md-3 card border justify-content-center align-items-center">
+              <div ><image src="" class="img-fluid" alt="repsonsive image"></image>
+              </div>   
+           </div>
+          <div class="col-md-8 p-1 card border" id="textcards">
+              <i class="fa-solid fa-square target"></i>
+          </div>
+      </div>
+      </div>    
  
 <script src="js/lib/anime.min.js"></script>
 <script src="sweetalert2.all.min.js"></script>
