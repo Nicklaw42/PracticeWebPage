@@ -57,23 +57,32 @@ let chartJS = document.querySelector('.chartJS');
 let datatable = document.querySelector('.divDataTable');
 let sweetAlert = document.querySelector('.divSweetAlert');
 let animeJS = document.querySelector('.divAnimeJS');
+let apiCards = document.querySelector('.apiCards');
+let hostingCards = document.querySelector('.hostingCards');
 $('#btnScrollToJS').click(function(){
     console.log("this works!")
-    chartJS.scrollIntoView(true);
+    chartJS.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
 });
 $('#btnScrollToDatatable').click(function(){
     console.log("this works!")
-    datatable.scrollIntoView(true);
+    datatable.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
 });
 $('#btnScrollToSA').click(function(){
     console.log("this works!")
-    sweetAlert.scrollIntoView(true);
+    sweetAlert.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
 });
 $('#btnScrollToAnime').click(function(){
     console.log("this works!")
-    animeJS.scrollIntoView(true);
+    animeJS.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
 });
-
+$('#btnScrolltoAPIs').click(function(){
+    console.log("this works!");
+    apiCards.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+});
+$('#btnScrollToHosting').click(function(){
+    console.log('this works!');
+    hostingCards.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+});
 // anime({
 //     targets: '.target',
 //     translateX: 1060,

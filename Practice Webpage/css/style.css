@@ -7,15 +7,13 @@
   flex-direction: row;
   justify-content: space-around;
 }
-.apiCards{
+.hostingCards,.apiCards{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
     
-.dark-mode{
-  font-family:monospace
-}
+
 .header{
   position: sticky;
   top: 0;
@@ -48,17 +46,20 @@
   }
   
   
-@media screen and (min-width: 200px) and (max-width: 1025px) {
+@media screen and (min-width: 200px) and (max-width: 500px) {
   .topCards {
       flex-direction: column;
   }
   .fa-envelope-open-text,.fa-code,.fa-burger{
     font-size: 20vw;
   }
+  .imgFire{
+    width: 30%;
+  }
 }
 
 @media screen and (min-width: 200px) and (max-width: 710px){
-  .apiCards{
+  .hostingCards,.apiCards{
     flex-direction: column;
   }
   .contentCards{
