@@ -1,10 +1,6 @@
-.soulsFire{
-  width: 20%;
-}
 .topCards{
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  flex-direction: row;
 }
 .contentCards{
   display: flex;
@@ -52,14 +48,12 @@
   }
   
   
-@media screen and (min-width: 200px) and (max-width: 425px) {
+@media screen and (min-width: 200px) and (max-width: 1025px) {
   .topCards {
       flex-direction: column;
   }
-}
-@media screen and (min-width: 426px) and (max-width: 1025px) {
-  .topCards {
-    flex-direction: column;
+  .fa-envelope-open-text,.fa-code,.fa-burger{
+    font-size: 20vw;
   }
 }
 
