@@ -1,4 +1,7 @@
-
+var customerPromise = $.get("https://function-1-opz5djvmca-uc.a.run.app/", function(customerInfo){
+    objCustomer = customerInfo;
+    console.log(objCustomer);
+})  
 
 $(document).ready(function(){
   $('#exampleTable').DataTable();
