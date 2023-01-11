@@ -1,15 +1,24 @@
-var customerPromise = $.get("https://function-1-opz5djvmca-uc.a.run.app/", function(customerInfo){
-    objCustomer = customerInfo;
-    console.log(objCustomer);
-})  
 
-$(document).ready(function(){
-  $('#exampleTable').DataTable();
-});
 
-$("#btnHide").click(function(){
-    $("<h1 class='btn-warning align-self-center'>Hi!</h1>").clone().appendTo("#mainFrame");
-});
+$.getJSON('http://34.122.185.219/practice2.php', darkCharacters = function(result){
+    let strHTML = '<table id="exampleTable" class="display table m-0" style="width:100%; color: black;">'
+        $.each(result, function(i, dark){
+        strHTML += '<tr><td>' + dark.NAME + '</td><td>' + dark.ORIGIN + '</td><td>' + dark.OCCUPATION + '</td></tr>' 
+    })
+    strHTML += '<thead>'
+    strHTML += '<tr>'
+    strHTML += '<th>Name</th>'
+    strHTML += '<th>Origin</th>'
+    strHTML += '<th>Occupation</th>'
+    strHTML += '</tr>'
+    strHTML += '</thead>'
+    $('.table').append(strHTML);
+    $(document).ready(function(){
+        $('#exampleTable').DataTable();
+      });
+})
+
+
 
 $('.btnSuggestions').click(function(){
     Swal.fire({
@@ -32,29 +41,8 @@ $('.btnTrigger').click(function(){
       })
 })
 
-$("#btnSpanish").click(function(){
-    $("#crdHello").text("El Sitio Linux de Nick!");
-    $("#btnHide").text("Hace un buton nuevo!");
-    $('.dogcard').text("Perros");
-    $("#btnEnglish").css({"visibility": "visible"});
-    $("#btnSpanish").css({"visibility": "Hidden"});
-
-    //look into ordinality with CSS, maybe stick to CSS docks rather than html
-});
-$("#btnEnglish").click(function(){
-    $("#crdHello").text("Nick's Linux Site!");
-    $("#btnHide").text("Make a New Button!");
-    $('.dogcard').text("Dogs");
-    $("#btnSpanish").css({"visibility": "visible"});
-    $("#btnEnglish").css({"visibility": "Hidden"});
-});
 
 
-var spanish = false;
-
-$("#btnSpanish").click(function(){
-    $("#crdHello").on("");
-});
 
 let chartJS = document.querySelector('.chartJS');
 let datatable = document.querySelector('.divDataTable');
