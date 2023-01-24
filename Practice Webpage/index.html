@@ -1,26 +1,210 @@
 <!DOCTYPE html>
 <html lang="English">
-    <header>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Order Processing</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/bootstrapSlate.min.css">
-    </header>
-    <body>
-        <div id="mainFrame" class="card mt-3 display:flex" style="width:98%">
-            <h1  id="crdHello"class="card display:flex align-items-center" >Nick's Linux Site!</h1>
-            <div class="display:flex">
-            <button id="btnHide" class="button btn-warning" style="width: 50%;">Make a New Button!</button>
-            <button id="btnSpanish" class="button align-self-end btn-warning"  style="width:24%">En Español!</button>
-            <button id="btnEnglish" class="button align-self-end btn-warning"  style="width:25%;visibility: hidden;">In English!</button>
-            </div>
-        </div>
+<header class="header">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+    <link rel="stylesheet" href="css/bootstrapSlate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/12aa9df8e0.js" crossorigin="anonymous"></script>
+</header>
 
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="js/app.js"></script>
-    </body>
+<body class="dark-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-house"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-link button" id="btnScrollToHosting">Hosting and Database</li>
+                <li class="nav-link button" id="btnScrolltoAPIs">APIs</li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Libraries
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><button class="btn" id="btnScrollToDatatable">Datatable</button></li>
+                  <li><button class="btn" id="btnScrollToJS">Chart.js</button></li>
+                  <li><button class="btn" id="btnScrollToSA">SweetAlerts</button></li>
+                  <li><button class="btn" id="btnScrollToAnime">Anime.js</button></li>
+                </ul>
+              </li>
+              <li class="nav-link button btnSuggestions">
+              Suggestion?
+              </li>
+              <li class="nav-item dropdown">
+                <a class="" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <image class="ml-2 mr-2" style="width: 50px;" src="css/images/github-mark/github-mark/github-mark-white.svg"></image>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a href="https://github.com/Nicklaw42" target="_blank" rel="noopener noreferrer"> <button class="btn"> My Github</button> </a></li>
+                  <li><a href="https://github.com/Nicklaw42/PracticeWebPage" target="_blank" rel="noopener noreferrer"> <button class="btn"> This Webpage</button> </a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <div class="p-4">
+        <div  class=" d-flex flex-column p-2 justify-content-center align-items-center">
+            <image style="width: 30%;" class="image card imgFire" src="css/images/camp-smp.gif"></image>
+            <div class="card d-flex flex-column p-2 mr-2 justify-content-center align-items-center">
+                <h2>Welcome weary traveler!</h2>
+                <h2>My name is Nick Law</h2>
+                </div>
+        </div> 
+        <div class="topCards card p-2">
+            <div class="card d-flex flex-column p-2 mr-2">
+            <image class="align-self-center mb-2" style="width: 35%;" src="css/images/Tennessee_Technological_University_seal.svg.png"></image>
+            <p style="text-align: center;">I'm a student at Tennesee Technological University where I am pursuing a bachelors in Business Information Technology.</p>
+            </div>
+            <div class="card d-flex flex-column p-2 mr-2 justify-content-center align-items-center">
+                <i class="fa-solid fa-burger mb-2"></i>
+            <p style="text-align: center;">My focus is in web development where I have experience working in all parts of the web stack.</p>
+            </div>
+            <div class="card d-flex flex-column p-2  mr-2 justify-content-center align-items-center">
+                <i class="fa-solid fa-code mb-2"></i>
+                <p style="text-align: center;">This is my website that I use to explore various web technologies and methods.</p>
+            </div>
+            <div class="card d-flex flex-column p-2 justify-content-center align-items-center">
+                <i class="fa-solid fa-envelope-open-text mb-2"></i>
+                <p style="text-align: center;">Leave a suggestion for any features, libraries, or tweaks you would like to see. I always like exploring new avenues.</p>
+            </div>
+        </div>  
+        <h1 class="card p-2">This site's hosting and database</h1>
+        <div class="hostingCards">
+            <div class="col-md-2  d-flex justify-content-center align-items-center">
+             <image class="responsive img-fluid" style="color: white;" src="css/images/Google_Cloud_logo.svg" alt="repsonsive image"></image>
+            </div>
+            <div class="col-md-3 p-3 card border">
+                <h3>Why use this?</h3>
+                <ul>
+                    <li>Easy to use</li>
+                    <li>Free tier is free (and that's priceless)</li>
+                    <li>Easy to manage with my google account</li>
+                </ul>
+            </div>
+            <div class="col-md-2 p-1 mr-1  d-flex justify-content-center align-items-center">
+                <image class="responsive img-fluid" style="width: 60%;" src="css/images/logo-mysql-170x115.png"  alt="repsonsive image"></image>
+               </div>
+               <div class="col-md-3 mr-1 p-3 card border">
+                   <h3>Why use this?</h3>
+                   <ul>
+                    <li>Free and open source</li>
+                    <li>Relational databases are what I have experience in</li>
+                    <li>Don't need a no-sql database for this. (Might try someday for fun)</li>
+                   </ul>
+               </div>
+        </div>
+        <h1 class="card p-2">APIs used here</h1>
+        <div class="apiCards">
+            <div class="col-md-2 mr-1 card border border-3 d-flex justify-content-center align-items-center">
+             <image class="responsive img-fluid" src="css/images/new-php-logo.png" alt="repsonsive image"></image>
+            </div>
+            <div class="col-md-3 mr-1 p-3 card border">
+                <h3>Why use this?</h3>
+                <ul>
+                    <li>Used in the common LAMP stack</li>
+                    <li>Very flexible</li>
+                    <li>Currently using it for my senior capstone project</li>
+                </ul>
+            </div>
+            <div class="col-md-2 p-1 mr-1 card border d-flex justify-content-center align-items-center">
+                <image class="responsive img-fluid" style="width: 60%;" src="css/images/590px-Node.js_logo.svg.png"  alt="repsonsive image"></image>
+               </div>
+               <div class="col-md-3 mr-1 p-3 card border">
+                   <h3>Why use this?</h3>
+                   <ul>
+                    <li>Has been widely adopted</li>
+                    <li>Allows me to explore JS outside of front end programming</li>
+                    <li>Looks like it is going to continue to gain popularity for a while</li>
+                   </ul>
+               </div>
+        </div>
+        <h1 class="card p-2">Libraries</h1>
+        <div class="contentCards">
+          <div class="col-md-3 divDataTable card border d-flex justify-content-center align-items-center">
+              <image src="css/images/logo.png" class="img-fluid mb-3 mt-2" alt="repsonsive image"></image>
+              <h4 style="text-align: center;">DataTables</h4>
+          </div>
+          <div class="col-md-8 card border">
+              <div class=" p-1 mt-2 table">
+                 
+              </div>
+          </div>
+      </div> 
+      <div class="contentCards">
+          <div class="col-md-3 card border d-flex justify-content-center align-items-center">
+              <image src="css/images/Chart-JS/chart-js-logos-idg4l58CuH.svg" class="img-fluid" alt="repsonsive image"></image>
+              <h4 style="text-align: center;">Chart.js</h4>
+          </div>
+          <div class="col-md-8 card border">
+              <div class=" flexbox chartJS mt-2">
+                  <canvas id="myChart"></canvas>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+                  const ctx = document.getElementById('myChart');
+                  new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange',],
+                          datasets: [{
+                              label: '# of Votes',
+                              data: [12, 19, 3, 5, 2, 3],
+                              borderWidth: 1,
+                              
+                          }]
+                      },
+                      options: {
+                          maintainAspectRatio: false,
+                          scales: {
+                              y: {
+                                  beginAtZero: true
+                              }
+                          }
+                      }
+                  });
+              </script>
+          </div>
+      </div>
+      <div class="contentCards">
+          <div class="col-md-3 card border justify-content-center align-items-center">
+              <image src="css/images/SweetAlert2.png" class="img-fluid" alt="repsonsive image"></image> 
+           </div>
+          <div class="col-md-8 p-1 card border d-flex align-items-center justify-content-center divSweetAlert" id="textcards">
+              <i class="fa-regular fa-circle-check mt-2"></i>
+              <button class="card btn btnTrigger">Fire SweetAlert</button>
+          </div>
+      </div>
+      <div class="contentCards">
+          <div class="col-md-3 card border justify-content-center align-items-center">
+              <image style="width: 50%;" src="css/images/animejs-v3-header-animation.gif" class="img-fluid responsive" alt="repsonsive image"></image>
+              <h4 style="text-align: center;">Anime.js</h4>
+           </div>
+          <div class="col-md-8 p-1 card border divAnimeJS" id="textcards">
+              <i class="fa-solid fa-square target"></i>
+          </div>
+      </div>
+      </div>    
+ 
+<script src="js/lib/anime.min.js"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
+</body>
 </html>

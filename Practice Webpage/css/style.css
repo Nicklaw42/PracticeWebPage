@@ -1,0 +1,71 @@
+.topCards{
+  display: flex;
+  flex-direction: row;
+}
+.contentCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.hostingCards,.apiCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+    
+
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+  .fa-bars{
+    font-size: 2em;
+  }
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50%;
+}
+#myChart{
+  min-height: 250px;
+}
+
+  .fa-square ,.fa-circle-check{
+    font-size: 12em;
+  }
+
+  .fa-envelope-open-text,.fa-code,.fa-burger{
+    font-size: 9vw;
+  }
+  
+  
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  .topCards {
+      flex-direction: column;
+  }
+  .fa-envelope-open-text,.fa-code,.fa-burger{
+    font-size: 20vw;
+  }
+  .imgFire{
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 710px){
+  .hostingCards,.apiCards{
+    flex-direction: column;
+  }
+  .contentCards{
+    flex-direction: column;
+  }
+  .techLogo{
+    width: 20%;
+  }
+}

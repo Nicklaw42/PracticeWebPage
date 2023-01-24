@@ -1,0 +1,68 @@
+.contentCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.col-md-3, .col-md-8{
+  border: 3px solid black;
+}
+.header{
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50%;
+}
+#myChart{
+  min-height: 250px;
+}
+.crdColor{
+  flex: 0 1 24%;
+}
+
+.crdComputer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+  .fa-computer{
+    font-size: 13em;
+  }
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+      .fa-computer {
+          font-size: 1.5em;
+      }
+      .contentCards{
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 1025px) {
+        .fa-computer {
+            font-size: 5em;
+        }
+    }
+
+    @media screen and (min-width: 1026px) {
+        .fa-computer {
+            font-size: 12em;
+        }
+    }
