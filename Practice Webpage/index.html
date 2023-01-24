@@ -14,19 +14,19 @@
     <script src="https://kit.fontawesome.com/12aa9df8e0.js" crossorigin="anonymous"></script>
 </header>
 
-<body class="dark-mode">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<body style="background-color: #041324;" class="row">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><i class="fa-solid fa-house"></i></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-link button" id="btnScrollToHosting">Hosting and Database</li>
                 <li class="nav-link button" id="btnScrolltoAPIs">APIs</li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Libraries
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -36,14 +36,11 @@
                   <li><button class="btn" id="btnScrollToAnime">Anime.js</button></li>
                 </ul>
               </li>
-              <li class="nav-link button btnSuggestions">
-              Suggestion?
-              </li>
               <li class="nav-item dropdown">
                 <a class="" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <image class="ml-2 mr-2" style="width: 50px;" src="css/images/github-mark/github-mark/github-mark-white.svg"></image>
+                  <image class="ml-2 mr-2" style="width: 50px;" src="css/images/github-mark/github-mark/github-mark.svg"></image>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu">
                   <li><a href="https://github.com/Nicklaw42" target="_blank" rel="noopener noreferrer"> <button class="btn"> My Github</button> </a></li>
                   <li><a href="https://github.com/Nicklaw42/PracticeWebPage" target="_blank" rel="noopener noreferrer"> <button class="btn"> This Webpage</button> </a></li>
                 </ul>
@@ -52,17 +49,19 @@
           </div>
         </div>
     </nav>
+    <div class="col-md-1"></div>
+    <div class="col-md-9 centerContent">
       <div class="p-4">
-        <div  class=" d-flex flex-column p-2 justify-content-center align-items-center">
+        <div  class=" d-flex flex-row p-2  align-items-center">
             <image style="width: 30%;" class="image card imgFire" src="css/images/camp-smp.gif"></image>
-            <div class="card d-flex flex-column p-2 mr-2 justify-content-center align-items-center">
-                <h2>Welcome weary traveler!</h2>
-                <h2>My name is Nick Law</h2>
+            <div class="d-flex flex-column p-2 mr-2 ml-2">
+                <h1 style="font-size: 75px">Welcome weary traveler!</h1>
+                <h1 style="font-size: 75px">My name is Nick Law</h1>
                 </div>
         </div> 
-        <div class="topCards card p-2">
+        <div class="topCards p-2">
             <div class="card d-flex flex-column p-2 mr-2">
-            <image class="align-self-center mb-2" style="width: 35%;" src="css/images/Tennessee_Technological_University_seal.svg.png"></image>
+            <image class="align-self-center mb-2" style="width: 45%;" src="css/images/Tennessee_Technological_University_seal.svg.png"></image>
             <p style="text-align: center;">I'm a student at Tennesee Technological University where I am pursuing a bachelors in Business Information Technology.</p>
             </div>
             <div class="card d-flex flex-column p-2 mr-2 justify-content-center align-items-center">
@@ -81,9 +80,9 @@
         <h1 class="card p-2">This site's hosting and database</h1>
         <div class="hostingCards">
             <div class="col-md-2  d-flex justify-content-center align-items-center">
-             <image class="responsive img-fluid" style="color: white;" src="css/images/Google_Cloud_logo.svg" alt="repsonsive image"></image>
+             <image class="responsive img-fluid " src="css/images/Google_Cloud_logo.svg" alt="repsonsive image"></image>
             </div>
-            <div class="col-md-3 p-3 card border">
+            <div class="col-md-3 p-3 card">
                 <h3>Why use this?</h3>
                 <ul>
                     <li>Easy to use</li>
@@ -94,21 +93,20 @@
             <div class="col-md-2 p-1 mr-1  d-flex justify-content-center align-items-center">
                 <image class="responsive img-fluid" style="width: 60%;" src="css/images/logo-mysql-170x115.png"  alt="repsonsive image"></image>
                </div>
-               <div class="col-md-3 mr-1 p-3 card border">
+               <div class="col-md-3 mr-1 p-3 card">
                    <h3>Why use this?</h3>
                    <ul>
                     <li>Free and open source</li>
                     <li>Relational databases are what I have experience in</li>
-                    <li>Don't need a no-sql database for this. (Might try someday for fun)</li>
                    </ul>
                </div>
         </div>
         <h1 class="card p-2">APIs used here</h1>
         <div class="apiCards">
-            <div class="col-md-2 mr-1 card border border-3 d-flex justify-content-center align-items-center">
+            <div class="col-md-2 mr-1 border-3 d-flex justify-content-center align-items-center">
              <image class="responsive img-fluid" src="css/images/new-php-logo.png" alt="repsonsive image"></image>
             </div>
-            <div class="col-md-3 mr-1 p-3 card border">
+            <div class="col-md-3 mr-1 p-3 card ">
                 <h3>Why use this?</h3>
                 <ul>
                     <li>Used in the common LAMP stack</li>
@@ -116,10 +114,10 @@
                     <li>Currently using it for my senior capstone project</li>
                 </ul>
             </div>
-            <div class="col-md-2 p-1 mr-1 card border d-flex justify-content-center align-items-center">
+            <div class="col-md-2 p-1 mr-1  d-flex justify-content-center align-items-center">
                 <image class="responsive img-fluid" style="width: 60%;" src="css/images/590px-Node.js_logo.svg.png"  alt="repsonsive image"></image>
                </div>
-               <div class="col-md-3 mr-1 p-3 card border">
+               <div class="col-md-3 mr-1 p-3 card">
                    <h3>Why use this?</h3>
                    <ul>
                     <li>Has been widely adopted</li>
@@ -130,22 +128,22 @@
         </div>
         <h1 class="card p-2">Libraries</h1>
         <div class="contentCards">
-          <div class="col-md-3 divDataTable card border d-flex justify-content-center align-items-center">
+          <div class="col-md-3 divDataTable card d-flex justify-content-center align-items-center">
               <image src="css/images/logo.png" class="img-fluid mb-3 mt-2" alt="repsonsive image"></image>
               <h4 style="text-align: center;">DataTables</h4>
           </div>
-          <div class="col-md-8 card border">
+          <div class="col-md-8 card">
               <div class=" p-1 mt-2 table">
                  
               </div>
           </div>
       </div> 
       <div class="contentCards">
-          <div class="col-md-3 card border d-flex justify-content-center align-items-center">
+          <div class="col-md-3 card d-flex justify-content-center align-items-center">
               <image src="css/images/Chart-JS/chart-js-logos-idg4l58CuH.svg" class="img-fluid" alt="repsonsive image"></image>
               <h4 style="text-align: center;">Chart.js</h4>
           </div>
-          <div class="col-md-8 card border">
+          <div class="col-md-8 card">
               <div class=" flexbox chartJS mt-2">
                   <canvas id="myChart"></canvas>
               </div>
@@ -176,24 +174,26 @@
           </div>
       </div>
       <div class="contentCards">
-          <div class="col-md-3 card border justify-content-center align-items-center">
+          <div class="col-md-3 card justify-content-center align-items-center">
               <image src="css/images/SweetAlert2.png" class="img-fluid" alt="repsonsive image"></image> 
            </div>
-          <div class="col-md-8 p-1 card border d-flex align-items-center justify-content-center divSweetAlert" id="textcards">
+          <div class="col-md-8 p-1 card d-flex align-items-center justify-content-center divSweetAlert" id="textcards">
               <i class="fa-regular fa-circle-check mt-2"></i>
               <button class="card btn btnTrigger">Fire SweetAlert</button>
           </div>
       </div>
       <div class="contentCards">
-          <div class="col-md-3 card border justify-content-center align-items-center">
+          <div class="col-md-3 card justify-content-center align-items-center">
               <image style="width: 50%;" src="css/images/animejs-v3-header-animation.gif" class="img-fluid responsive" alt="repsonsive image"></image>
               <h4 style="text-align: center;">Anime.js</h4>
            </div>
-          <div class="col-md-8 p-1 card border divAnimeJS" id="textcards">
+          <div class="col-md-8 p-1 card divAnimeJS" id="textcards">
               <i class="fa-solid fa-square target"></i>
           </div>
       </div>
-      </div>    
+      </div>   
+      </div>
+      <div class="col-md-1"></div> 
  
 <script src="js/lib/anime.min.js"></script>
 <script src="sweetalert2.all.min.js"></script>

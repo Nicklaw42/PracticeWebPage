@@ -20,17 +20,6 @@ $.getJSON('https://my-node-api-opz5djvmca-uc.a.run.app/employees', darkCharacter
 
 
 
-$('.btnSuggestions').click(function(){
-    Swal.fire({
-        title: 'Have a suggestion?',
-        text: "Enter your message here and I'll get it in my email.",
-        input: 'textarea',
-        icon: 'question',
-        confirmButtonText: 'Submit',
-        showDenyButton: true,
-        denyButtonText: 'Cancel'
-      })
-});
 
 $('.btnTrigger').click(function(){
     Swal.fire({
