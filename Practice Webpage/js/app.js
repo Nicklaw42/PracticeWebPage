@@ -1,6 +1,6 @@
 
 
-$.getJSON('http://34.122.185.219/practice2.php', darkCharacters = function(result){
+$.getJSON('https://my-node-api-opz5djvmca-uc.a.run.app/employees', darkCharacters = function(result){
     let strHTML = '<table id="exampleTable" class="display table m-0" style="width:100%; color: black;">'
         $.each(result, function(i, dark){
         strHTML += '<tr><td>' + dark.NAME + '</td><td>' + dark.ORIGIN + '</td><td>' + dark.OCCUPATION + '</td></tr>' 
