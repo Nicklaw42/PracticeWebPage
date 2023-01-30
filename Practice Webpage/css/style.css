@@ -1,3 +1,9 @@
+.body{
+  background-image: url(images/trees-minimalist-wallpaper.jpg);
+  background-blend-mode:soft-light;
+  background-color: #308af8;
+}
+
 .topCards{
   display: flex;
   flex-direction: row;
