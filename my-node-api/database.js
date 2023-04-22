@@ -1,3 +1,4 @@
+require('dotenv').config();
 const mysql = require('mysql');
 
 var config = {
@@ -5,6 +6,7 @@ var config = {
     database: process.env.DB_NAME,
     password: process.env.DB_PASS,
 };
+console.log(config);
 
 // Later on when running from Google Cloud, env variables will be passed in container cloud connection config
 if(process.env.NODE_ENV === 'production') {
